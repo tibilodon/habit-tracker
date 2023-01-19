@@ -1,0 +1,4 @@
+//compiles all the styles in all the files in a folder and "sends" it
+//shove _index.scss in every folder you want to do this to
+//then you can just @use "../FOLDER NAME, but then you need to use eg.: color: vars.$redCol or import it as: @use "../vars" as a; then color:a.$redCol or @use "../vars" as * then color:$redCol
+@forward "../variables/vars";

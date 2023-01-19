@@ -1,0 +1,12 @@
+@use "./variables" as *;
+@use "./mixins" as btn;
+
+.ico {
+  filter: invert(92%) sepia(21%) saturate(544%) hue-rotate(334deg)
+    brightness(104%) contrast(103%);
+}
+.icoActive,
+.ico:hover {
+  filter: invert(10%) sepia(77%) saturate(7207%) hue-rotate(360deg)
+    brightness(78%) contrast(109%);
+}

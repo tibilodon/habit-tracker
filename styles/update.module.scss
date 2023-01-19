@@ -1,0 +1,14 @@
+@use "./variables" as *;
+@use "./mixins" as btn;
+
+.wrap {
+  button {
+    @include btn.buttonStyle($orangeCol, $blackCol, 2em);
+    // margin-top: 1em;
+  }
+  button:hover,
+  button:focus {
+    @include btn.buttonStyle($mustardCol, $blackCol, 2em);
+    // margin-top: 1em;
+  }
+}

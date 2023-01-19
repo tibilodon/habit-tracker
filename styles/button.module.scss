@@ -1,0 +1,12 @@
+@use "./variables" as *;
+@use "./mixins" as btn;
+
+.btn {
+  @include btn.buttonStyle($bgCol, $redCol, 2em);
+  // margin-right: 2em;
+}
+.btn:hover,
+.btnActive {
+  @include btn.buttonStyle($redCol, $bgCol, 2em);
+  // margin-right: 2em;
+}

@@ -1,0 +1,32 @@
+@use "./variables" as *;
+@use "./mixins" as btn;
+
+.wrap {
+  height: 100vh;
+  // @include rtest();
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .content {
+    // @include test();
+    height: 100%;
+    padding: 1em;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      align-self: center;
+      max-width: 50%;
+    }
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    opacity: 0.7;
+    border: 1px solid #333;
+  }
+}

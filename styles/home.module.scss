@@ -1,0 +1,49 @@
+@use "./variables" as *;
+@use "./mixins" as btn;
+.home {
+  height: 100%;
+  width: 100%;
+  padding-top: 10em;
+  h1 {
+    padding-left: 1em;
+    border-bottom: 1px solid #333;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .wrap {
+    margin: 0.5em;
+    padding: 0.2em;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    display: flex;
+    width: 100%;
+    .contentWrap {
+      width: 100%;
+    }
+    .itemWrap {
+    }
+    .btn {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+      justify-content: space-around;
+
+      // @include gtest();
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .home {
+    padding-top: 15em;
+    .layout {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

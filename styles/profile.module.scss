@@ -1,0 +1,23 @@
+@use "./variables" as *;
+@use "./mixins" as btn;
+
+.profile {
+  position: relative;
+  width: 100%;
+  height: 100vh; // height: 50em;
+  // @include test();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    @include btn.buttonStyle($orangeCol, $blackCol, 2em);
+    margin-top: 1em;
+  }
+  button:hover,
+  button:focus {
+    @include btn.buttonStyle($mustardCol, $blackCol, 2em);
+    margin-top: 1em;
+  }
+}

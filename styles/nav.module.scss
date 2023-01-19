@@ -1,0 +1,31 @@
+// @use "./variables/vars" as v;
+@use "./variables" as *;
+@use "./mixins" as btn;
+.nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 3em;
+  background-color: $blackCol;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .about {
+    display: flex;
+    column-gap: 1em;
+  }
+  div {
+    // @include test();
+    display: flex;
+    align-items: center;
+    .img {
+      filter: invert(92%) sepia(21%) saturate(544%) hue-rotate(334deg)
+        brightness(104%) contrast(103%);
+    }
+    .profileBtn,
+    .profileBtn:hover,
+    .profileBtn:focus {
+      margin: 0;
+    }
+  }
+}

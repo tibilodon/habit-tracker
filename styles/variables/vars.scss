@@ -1,0 +1,22 @@
+//colors
+$blackCol: #333;
+$redCol: #b20000;
+$cherryCol: #fd292f;
+$orangeCol: #fe8535;
+$mustardCol: #fdb10b;
+$bgCol: #fef4c0;
+
+// fonts
+$h1Font: Arial, Helvetica, sans-serif;
+$bodyFont: "Times New Roman", Times, serif;
+
+//test
+@mixin test() {
+  border: 2px solid black;
+}
+@mixin rtest() {
+  border: 2px solid red;
+}
+@mixin gtest() {
+  border: 2px solid green;
+}

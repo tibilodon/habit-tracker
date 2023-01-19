@@ -1,0 +1,42 @@
+@use "./variables/" as *;
+@use "./mixins" as btn;
+
+.box {
+  box-shadow: rgba(50, 50, 93, 0.55) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.5) 0px 1px 3px -1px;
+  padding: 1em;
+  margin: 1em;
+  // gap: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+
+  p {
+    // max-width: 30%;
+    line-break: strict;
+
+    // border: 2px solid black;
+  }
+  // &::content {
+  //   gap: 2em;
+  // }
+}
+.boxActive {
+  box-shadow: rgba(178, 0, 0, 1) 1px 2px 5px 1px,
+    rgba(178, 0, 0, 1) 1px 1px 3px -1px;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  p {
+    // max-width: 30%;
+    line-break: strict;
+
+    // border: 2px solid black;
+  }
+}
